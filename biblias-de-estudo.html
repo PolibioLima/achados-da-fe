@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melhores Bíblias de Estudo 2026 — Comparativo Completo | Achados da Fé</title>
+<meta name="description" content="Comparamos as Bíblias de Estudo mais vendidas no Mercado Livre por capa, fonte, mapas e preço. Veja qual combina com sua fase de leitura e seu orçamento.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,500;0,600;1,500&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================
+   ACHADOS DA FÉ — Sistema de Design
+   Paleta: noite/aurora + trigo dourado + verde broto
+   Tipografia: Fraunces (display) + Karla (corpo)
+   Assinatura: motivo de "grão/broto" (parábola do semeador)
+   ============================================ */
+
+:root {
+  --ink: #1F2A3C;          /* azul-noite profundo, base escura */
+  --ink-soft: #34435C;     /* variação mais clara do azul-noite */
+  --paper: #FBF7EE;        /* papel claro, aquecido */
+  --paper-dim: #F1EADA;    /* seções alternadas */
+  --gold: #C79A3C;         /* trigo dourado, destaque principal */
+  --gold-soft: #E4C77E;    /* dourado claro, hover/detalhe */
+  --sage: #6E8266;         /* verde broto, secundário */
+  --sage-soft: #DCE4D4;    /* fundo suave verde */
+  --ink-70: rgba(31, 42, 60, 0.7);
+  --ink-45: rgba(31, 42, 60, 0.45);
+
+  --font-display: "Fraunces", Georgia, serif;
+  --font-body: "Karla", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --radius: 14px;
+  --max-width: 1120px;
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img { max-width: 100%; display: block; }
+
+a { color: inherit; }
+
+.wrap {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* ---------- Motivo assinatura: broto/grão ---------- */
+.seed-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+.seed-mark svg { flex-shrink: 0; }
+
+.divider-seed {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 48px 0;
+  color: var(--sage);
+}
+.divider-seed::before,
+.divider-seed::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, currentColor, transparent);
+  opacity: 0.4;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  background: var(--ink);
+  color: var(--paper);
+  padding: 20px 0;
+}
+.site-header .wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: var(--paper);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.brand .tagline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.68rem;
+  font-weight: 400;
+  color: var(--gold-soft);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+.site-nav a {
+  color: var(--paper);
+  text-decoration: none;
+  font-size: 0.92rem;
+  margin-left: 28px;
+  opacity: 0.85;
+  transition: opacity 0.15s ease;
+}
+.site-nav a:hover { opacity: 1; color: var(--gold-soft); }
+
+/* ---------- Hero ---------- */
+.hero {
+  background: linear-gradient(180deg, var(--ink) 0%, var(--ink-soft) 100%);
+  color: var(--paper);
+  padding: 88px 0 96px;
+  position: relative;
+  overflow: hidden;
+}
+.hero .wrap { position: relative; z-index: 2; max-width: 720px; }
+.hero-eyebrow {
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--gold-soft);
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+.hero h1 {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.4rem);
+  font-weight: 600;
+  line-height: 1.12;
+  margin: 0 0 22px;
+  letter-spacing: -0.01em;
+}
+.hero h1 em {
+  font-style: italic;
+  color: var(--gold-soft);
+}
+.hero p.lede {
+  font-size: 1.12rem;
+  color: rgba(251, 247, 238, 0.82);
+  margin: 0 0 34px;
+  max-width: 560px;
+}
+.hero-field {
+  position: absolute;
+  right: -60px;
+  bottom: -40px;
+  width: 420px;
+  height: 420px;
+  opacity: 0.16;
+  z-index: 1;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 999px;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn-gold {
+  background: var(--gold);
+  color: var(--ink);
+}
+.btn-gold:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(199, 154, 60, 0.35); }
+.btn-outline {
+  background: transparent;
+  border: 1.5px solid rgba(251, 247, 238, 0.4);
+  color: var(--paper);
+}
+.btn-outline:hover { border-color: var(--gold-soft); color: var(--gold-soft); }
+.btn-small {
+  padding: 9px 18px;
+  font-size: 0.85rem;
+}
+
+/* ---------- Sections ---------- */
+section { padding: 72px 0; }
+.section-dim { background: var(--paper-dim); }
+
+.section-head {
+  max-width: 620px;
+  margin: 0 0 44px;
+}
+.section-head .eyebrow {
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  font-weight: 700;
+  margin-bottom: 10px;
+  display: block;
+}
+.section-head h2 {
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.2rem);
+  font-weight: 600;
+  margin: 0 0 12px;
+  color: var(--ink);
+}
+.section-head p {
+  color: var(--ink-70);
+  font-size: 1.02rem;
+  margin: 0;
+}
+
+/* ---------- Category cards ---------- */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}
+.category-card {
+  background: var(--paper);
+  border: 1px solid rgba(31, 42, 60, 0.08);
+  border-radius: var(--radius);
+  padding: 30px 26px;
+  text-decoration: none;
+  color: var(--ink);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+}
+.category-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 34px rgba(31, 42, 60, 0.1);
+  border-color: var(--gold-soft);
+}
+.category-card .icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: var(--sage-soft);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage);
+}
+.category-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  margin: 0;
+  font-weight: 600;
+}
+.category-card p {
+  margin: 0;
+  color: var(--ink-70);
+  font-size: 0.95rem;
+  flex-grow: 1;
+}
+.category-card .count {
+  font-size: 0.82rem;
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* ---------- Product cards ---------- */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 26px;
+}
+.product-card {
+  background: var(--paper);
+  border: 1px solid rgba(31, 42, 60, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.product-card .badge {
+  align-self: flex-start;
+  margin: 18px 0 0 18px;
+  background: var(--sage-soft);
+  color: var(--sage);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 999px;
+}
+.product-card .thumb {
+  margin: 16px 18px 0;
+  height: 170px;
+  border-radius: 10px;
+  background: var(--paper-dim);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ink-45);
+  font-size: 0.85rem;
+  text-align: center;
+  padding: 12px;
+}
+.product-card .body { padding: 18px; display: flex; flex-direction: column; gap: 10px; flex-grow: 1; }
+.product-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.08rem;
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.3;
+}
+.product-card .verse {
+  font-style: italic;
+  color: var(--sage);
+  font-size: 0.88rem;
+  border-left: 2px solid var(--sage-soft);
+  padding-left: 10px;
+}
+.product-card .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 6px;
+}
+.product-card .price {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+.product-card .price small {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  color: var(--ink-45);
+  font-weight: 400;
+  display: block;
+}
+
+/* ---------- Comparison table ---------- */
+.compare-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--paper);
+  border-radius: var(--radius);
+  overflow: hidden;
+  font-size: 0.94rem;
+}
+.compare-table th, .compare-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(31, 42, 60, 0.08);
+}
+.compare-table thead th {
+  background: var(--ink);
+  color: var(--paper);
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 0.98rem;
+}
+.compare-table tbody tr:last-child td { border-bottom: none; }
+.compare-table tbody tr:hover { background: var(--paper-dim); }
+
+/* ---------- How it works ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+.step .num {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+.step h4 {
+  font-family: var(--font-display);
+  margin: 0 0 8px;
+  font-size: 1.05rem;
+}
+.step p { margin: 0; color: var(--ink-70); font-size: 0.92rem; }
+
+/* ---------- FAQ ---------- */
+.faq-item {
+  border-bottom: 1px solid rgba(31, 42, 60, 0.1);
+  padding: 20px 0;
+}
+.faq-item h4 {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  margin: 0 0 8px;
+}
+.faq-item p { margin: 0; color: var(--ink-70); font-size: 0.94rem; }
+
+/* ---------- Disclosure ---------- */
+.disclosure {
+  background: var(--sage-soft);
+  border-radius: var(--radius);
+  padding: 20px 24px;
+  font-size: 0.88rem;
+  color: var(--ink-70);
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--ink);
+  color: rgba(251, 247, 238, 0.7);
+  padding: 46px 0 32px;
+  font-size: 0.88rem;
+}
+.site-footer .wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.site-footer a { color: var(--gold-soft); text-decoration: none; }
+.site-footer .foot-brand {
+  font-family: var(--font-display);
+  color: var(--paper);
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 640px) {
+  .site-nav { display: none; }
+  .hero { padding: 64px 0 72px; }
+  section { padding: 52px 0; }
+  .site-footer .wrap { flex-direction: column; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; scroll-behavior: auto !important; }
+}
+
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a href="index.html" class="brand">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13 24C13 24 5 19 5 11.5C5 6.5 8.5 2 13 2C17.5 2 21 6.5 21 11.5C21 19 13 24 13 24Z" stroke="#C79A3C" stroke-width="1.4"/>
+        <path d="M13 24V8" stroke="#C79A3C" stroke-width="1.4"/>
+      </svg>
+      <span>Achados da Fé<span class="tagline">Recomendações com propósito</span></span>
+    </a>
+    <nav class="site-nav">
+      <a href="index.html#categorias">Categorias</a>
+      <a href="index.html#como-funciona">Como funciona</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" style="padding: 56px 0 64px;">
+  <div class="wrap">
+    <span class="hero-eyebrow">Comparativo · Atualizado 2026</span>
+    <h1>As melhores <em>Bíblias de Estudo</em> para cada fase da sua leitura</h1>
+    <p class="lede">Analisamos capa, tipo de papel, tamanho da fonte, mapas e notas de estudo das opções mais vendidas no Mercado Livre — para você escolher sem arrependimento.</p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="max-width: 760px;">
+    <p style="font-size: 1.05rem; color: var(--ink-70);">Escolher uma Bíblia de Estudo vai muito além do preço. O tamanho da fonte muda o conforto de leitura diária, o tipo de capa define quanto tempo ela vai durar no uso do dia a dia, e as notas de rodapé fazem diferença real para quem está começando a estudar a Palavra com mais profundidade. Reunimos abaixo três faixas — entrada, intermediária e premium — para caber no seu momento e no seu orçamento.</p>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Visão geral</span>
+      <h2>Comparativo rápido</h2>
+    </div>
+    <div style="overflow-x: auto;">
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Modelo</th>
+            <th>Capa</th>
+            <th>Fonte</th>
+            <th>Ideal para</th>
+            <th>Preço aprox.</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Opção Entrada</strong></td>
+            <td>Capa mole, letra jumbo</td>
+            <td>Grande</td>
+            <td>Primeira Bíblia, leitura fácil</td>
+            <td>R$ 50,64</td>
+          </tr>
+          <tr>
+            <td><strong>Opção Intermediária</strong></td>
+            <td>Capa dura bicolor</td>
+            <td>Média, Full Color</td>
+            <td>Leitura diária no dia a dia</td>
+            <td>R$ 75,74</td>
+          </tr>
+          <tr>
+            <td><strong>Opção Premium</strong></td>
+            <td>Capa preta, beira dourada</td>
+            <td>Grande + Harpa Cristã</td>
+            <td>Presente e uso na igreja</td>
+            <td>R$ 90,99</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Detalhes</span>
+      <h2>As 3 opções, uma por uma</h2>
+      <p>Para inserir os produtos reais: troque o texto do "thumb", o título, o preço e o link de cada card pelo produto e link de afiliado gerado no seu painel do Mercado Livre.</p>
+    </div>
+
+    <div class="product-grid">
+
+      <div class="product-card">
+        <span class="badge">Custo-benefício · 25% OFF</span>
+        <div class="thumb" style="padding:0; background:var(--paper-dim);">
+          <img src="images/biblia-jumbo-entrada.png" alt="Bíblia Sagrada Letra Jumbo Luxo Bicolor, preta e caramelo, com Harpa" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+        </div>
+        <div class="body">
+          <h3>Bíblia Sagrada Letra Jumbo Luxo Bicolor — Preta e Caramelo, com Harpa | Rei das Bíblias</h3>
+          <p class="verse">"A tua palavra é lâmpada para os meus pés." — Salmos 119:105</p>
+          <p style="font-size: 0.9rem; color: var(--ink-70); margin:0;">Letra jumbo facilita a leitura diária, capa mole leve para carregar e acompanha Harpa Cristã e índice — ótima primeira Bíblia de estudo.</p>
+          <div class="meta">
+            <div class="price">R$ 50,64<small><span style="text-decoration:line-through; color:var(--ink-45);">R$ 67,99</span> · no Mercado Livre</small></div>
+            <a href="https://meli.la/2Xy96pA" class="btn btn-gold btn-small" target="_blank" rel="nofollow sponsored">Ver oferta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">Mais escolhida · 49% OFF</span>
+        <div class="thumb" style="padding:0; background:var(--paper-dim);">
+          <img src="images/biblia-homem-capa.png" alt="Bíblia de Estudo para o Cotidiano do Homem, capa dura bicolor" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+        </div>
+        <div class="body">
+          <h3>Bíblia de Estudo para o Cotidiano do Homem — NVA, Full Color, Capa Dura Bicolor</h3>
+          <p class="verse">"Como o ferro afia o ferro, assim o homem afia o rosto do seu amigo." — Provérbios 27:17</p>
+          <p style="font-size: 0.9rem; color: var(--ink-70); margin:0;">Edição com seções por cores, palavras de Deus em azul, de Jesus em vermelho e promessas em destaque — pensada para o dia a dia do homem que busca crescer na fé.</p>
+          <div class="meta">
+            <div class="price">R$ 75,74<small><span style="text-decoration:line-through; color:var(--ink-45);">R$ 149,99</span> · no Mercado Livre</small></div>
+            <a href="https://meli.la/2P86bV4" class="btn btn-gold btn-small" target="_blank" rel="nofollow sponsored">Ver oferta</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-card">
+        <span class="badge">Presente especial · 30% OFF</span>
+        <div class="thumb" style="padding:0; background:var(--paper-dim);">
+          <img src="images/biblia-ad-harpa.png" alt="Bíblia Assembleia de Deus ARC Letra Grande, preta, com Harpa Cristã" style="width:100%; height:100%; object-fit:cover; border-radius:10px;">
+        </div>
+        <div class="body">
+          <h3>Bíblia Assembleia de Deus ARC Letra Grande — Preta, com Harpa Cristã | CPAD</h3>
+          <p class="verse">"Cantai ao Senhor um cântico novo, e o seu louvor na congregação dos santos." — Salmos 149:1</p>
+          <p style="font-size: 0.9rem; color: var(--ink-70); margin:0;">Edição oficial da Assembleia de Deus, letra grande, acabamento com beira dourada — acompanha Harpa Cristã e resumo da Declaração de Fé. Ótima para presentear membros da igreja.</p>
+          <div class="meta">
+            <div class="price">R$ 90,99<small><span style="text-decoration:line-through; color:var(--ink-45);">R$ 129,99</span> · no Mercado Livre</small></div>
+            <a href="https://meli.la/1tFLMRV" class="btn btn-gold btn-small" target="_blank" rel="nofollow sponsored">Ver oferta</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="section-dim">
+  <div class="wrap" style="max-width: 760px;">
+    <div class="section-head">
+      <span class="eyebrow">Dúvidas comuns</span>
+      <h2>Perguntas frequentes</h2>
+    </div>
+
+    <div class="faq-item">
+      <h4>Qual a diferença entre Bíblia de Estudo e Bíblia comum?</h4>
+      <p>A Bíblia de Estudo traz notas explicativas, mapas históricos e referências cruzadas que ajudam a entender o contexto dos textos — a comum traz apenas o texto bíblico.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Vale a pena pagar mais caro por uma capa de couro?</h4>
+      <p>Se você pretende usar a Bíblia diariamente por muitos anos ou quer presentear, sim — a durabilidade compensa o investimento a longo prazo.</p>
+    </div>
+    <div class="faq-item">
+      <h4>Qual versão de tradução é mais indicada para iniciantes?</h4>
+      <p>Traduções de linguagem mais atual costumam facilitar a leitura de quem está começando. Verifique a versão específica na descrição do produto antes de comprar.</p>
+    </div>
+
+    <div class="divider-seed">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 16C9 16 3 12.5 3 7.5C3 4.5 5.5 2 8.5 2S14 4.5 14 7.5C14 12.5 9 16 9 16Z" stroke="currentColor" stroke-width="1.2"/></svg>
+    </div>
+
+    <div class="disclosure">
+      <span>ℹ️</span>
+      <span>Este site participa do Programa de Afiliados do Mercado Livre. Ao comprar através dos links desta página, podemos receber uma comissão, sem custo extra para você.</span>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div>
+      <div class="foot-brand">Achados da Fé</div>
+      <p>Recomendações independentes de produtos cristãos vendidos no Mercado Livre.</p>
+    </div>
+    <div>
+      <a href="index.html">Início</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
